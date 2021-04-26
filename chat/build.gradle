@@ -9,7 +9,7 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.bridgefy.samples.chat"
+        applicationId "in.insideandroid.malla"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode buildVersionCode(this.ext.version)
