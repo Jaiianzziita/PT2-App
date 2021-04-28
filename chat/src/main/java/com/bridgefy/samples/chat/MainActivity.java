@@ -1,5 +1,6 @@
 package com.bridgefy.samples.chat;
 
+
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
@@ -14,8 +15,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -37,9 +42,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {  //protected es
 
-    private String TAG = "MainActivity";
+    Button bt1;
+    Intent intent;
+   // EntOne entOne= new EntOne();
+    private String TAG = "MainActivity";     //privado
+
+
 
     static final String INTENT_EXTRA_NAME = "peerName";
     static final String INTENT_EXTRA_UUID = "peerUuid";
@@ -56,9 +66,28 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        bt1=findViewById(R.id.bt1);
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               /* Intent intent = new Intent(MainActivity.this, EnterOne.class);
+                startActivity(intent);*/
+                intent = new Intent(getApplicationContext(), EntOne.class );
+                startActivity(intent);
+
+             //   entOne.onCreate(savedInstanceState);
+                //entOne.getClass();
+            }
+        });
+
+
+
+
 
         // Configure the Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -88,7 +117,14 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
             }
         });
+
+
+
+
     }
+
+
+
 
     @Override
     protected void onDestroy() {
@@ -342,4 +378,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
 }
