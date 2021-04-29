@@ -6,6 +6,7 @@
     <string name="registration_error">A registration occurred. Make sure you\'re online the first time
     that you install this sample app</string>
     <string name="title_activity_tabs">TabsActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">CHAT</string>
+    <string name="tab_text_2">GRUPO</string>
+    <string name="tab_text_3">UBICACION</string>
 </resources>
