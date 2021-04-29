@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Enters.EntOne">
-
+    tools:context=".Enters.EntFour">
 
 
     <ImageView
 
         android:layout_width="500dp"
         android:layout_height="match_parent"
-        android:src="@drawable/uno"
+        android:src="@drawable/cuatro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,13 +19,13 @@
         android:contentDescription="TODO" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn4"
         android:layout_width="339dp"
         android:layout_height="45dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:clickable="true"
-        android:text="SIGUIENTE"
+        android:text="COMENZAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

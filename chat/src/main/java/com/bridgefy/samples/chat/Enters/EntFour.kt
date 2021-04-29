@@ -1,23 +1,21 @@
-package com.bridgefy.samples.chat
+package com.bridgefy.samples.chat.Enters
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
+import com.bridgefy.samples.chat.MainActivity
+import com.bridgefy.samples.chat.R
 
-class EntTwo : AppCompatActivity() {
-
+class EntFour : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.two_ent)
+        setContentView(R.layout.ent_four)
 
-        findViewById<Button>(R.id.btn2).setOnClickListener({
+
+        findViewById<Button>(R.id.btn4).setOnClickListener({
             val intent: Intent = Intent (this,  MainActivity::class.java)
             startActivity(intent)
         })
-
-
     }
-
-
 }

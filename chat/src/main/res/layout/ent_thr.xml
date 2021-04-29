@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Enters.EntOne">
+    tools:context=".Enters.EntThr">
 
 
 
@@ -12,7 +12,7 @@
 
         android:layout_width="500dp"
         android:layout_height="match_parent"
-        android:src="@drawable/uno"
+        android:src="@drawable/tres"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,7 +20,7 @@
         android:contentDescription="TODO" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn3"
         android:layout_width="339dp"
         android:layout_height="45dp"
         android:layout_marginBottom="60dp"
