@@ -19,4 +19,12 @@
     <string name="crearContactoEmergencia">Nuevo contacto de emergencia</string>
     <string name="ajustesChats">Ajuste chats</string>
     <string name="ajustesUbicacion">Ajuste ubicacion</string>
+    <string name="profile">Perfil</string>
+    <string name="profilephoto">Foto de perfil</string>
+    <string name="text_changeNameUsser">Cambiar nombre de usuario</string>
+    <string name="cambiarNombreUsuario">Nombre de usuario</string>
+    <string name="card_enable_pass">Habilitar cambio de contraseña</string>
+    <string name="hint_passwordProfile">Contraseña nueva</string>
+    <string name="hint_passwordProfile2">Confirmar contraseña</string>
+    <string name="button_sign_in">Iniciar sesion</string>
 </resources>
