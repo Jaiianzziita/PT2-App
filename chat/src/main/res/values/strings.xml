@@ -36,11 +36,14 @@
     <string name="hint_username">Nombre de usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="text_forgot_password">¿Olvidaste tu contraseña?</string>
-    <string name="text_signin_signup">¿No tienes cuenta? Registrate</string>
+    <string name="text_signin_signup">¿No tienes cuenta? <b>Registrate</b></string>
     <string name="text_signup_message">Hola, vamos a configurar tu cuenta</string>
     <string name="hint_email">Correo</string>
     <string name="hint_phone">Numero telefonico</string>
     <string name="hint_confirm_password">Confirmar contraseña</string>
     <string name="button_sign_up">Registrar</string>
     <string name="text_signup_terms">Al registrarte, agregas nuestros terminos y condiciones</string>
+    <string name="text_forgot_password_title">¿Olvidaste tu contraseña? No te preocupes</string>
+    <string name="text_forgot_password_message">Te enviaremos un link para reestablecer tu contraseña</string>
+    <string name="button_send">Enviar</string>
 </resources>

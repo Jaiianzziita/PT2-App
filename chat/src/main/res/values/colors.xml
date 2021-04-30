@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F64F4F</color>
+    <color name="colorPrimary">#26C6DA</color>
     <color name="colorPrimaryDark">#DA4336</color>
     <color name="colorAccent">#398EF2</color>
     <color name="white">#FFFFFF</color>
@@ -9,4 +9,5 @@
     <color name="colorTextInputBackground">#F7F7F7</color>
     <color name="colorBackground">#fff</color>
     <color name="md_cyan_700">#0097A7</color>
+    <color name="actionbarOpacity">#00000000</color>
 </resources>
