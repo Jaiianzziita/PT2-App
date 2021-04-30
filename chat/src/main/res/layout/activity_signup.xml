@@ -52,14 +52,20 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/dummy_image" />
 
-                    <ImageView
+                    <Button
+                        android:id="@+id/btnGaleria"
+                        android:background="@drawable/ic_plus"
+                        android:clickable="true"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_margin="1dp"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        app:srcCompat="@drawable/ic_plus" />
+                         />
+
+
+"
                 </RelativeLayout>
 
                 <TextView
