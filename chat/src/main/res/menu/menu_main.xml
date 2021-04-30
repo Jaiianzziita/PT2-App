@@ -8,4 +8,56 @@
         android:title="@string/broadcast"
         android:icon="@drawable/ic_broadcast"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/buscar"
+        android:icon="@drawable/ic_search"
+        android:title="@string/buscar"
+        android:contentDescription="@string/content_description_buscar"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/personAdd"
+        android:icon="@drawable/ic_person_add"
+        android:title="@string/personAdd"
+        android:contentDescription="@string/content_description_agregar"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/menu"
+        android:contentDescription="@string/content_description_menu"
+        app:showAsAction="ifRoom"
+       />
+
+      <!--  <menu>
+            <item
+                android:id="@+id/newGroup"
+                android:title="@string/crearGrupo"
+
+                />
+            <item
+                android:id="@+id/newContactEmergency"
+                android:title="@string/crearContactoEmergencia"
+
+                />
+            <item
+                android:id="@+id/ajustesChats"
+                android:title="@string/ajustesChats"
+
+                />
+
+            <item
+                android:id="@+id/AjustesUbicacion"
+                android:title="@string/ajustesUbicacion"
+                />
+
+        </menu>
+
+    </item>
+-->
+
+
 </menu>

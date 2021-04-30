@@ -69,19 +69,19 @@ public class MainActivity extends AppCompatActivity {  //protected es
         setContentView(R.layout.activity_main);
 
 
-        bt1=findViewById(R.id.bt1);
+       /* bt1=findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* Intent intent = new Intent(MainActivity.this, EnterOne.class);
-                startActivity(intent);*/
+               *//* Intent intent = new Intent(MainActivity.this, EnterOne.class);
+                startActivity(intent);*//*
                 intent = new Intent(getApplicationContext(), EntOne.class );
                 startActivity(intent);
 
              //   entOne.onCreate(savedInstanceState);
                 //entOne.getClass();
             }
-        });
+        });*/
 
 
 

@@ -9,4 +9,10 @@
     <string name="tab_text_1">CHAT</string>
     <string name="tab_text_2">GRUPO</string>
     <string name="tab_text_3">UBICACION</string>
+    <string name="buscar">Buscar</string>
+    <string name="content_description_buscar">Buscar</string>
+    <string name="personAdd">Agregar contacto</string>
+    <string name="content_description_agregar">Agregar contacto</string>
+    <string name="menu">Menu</string>
+    <string name="content_description_menu">Menu</string>
 </resources>
