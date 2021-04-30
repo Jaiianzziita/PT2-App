@@ -67,6 +67,36 @@
                 app:srcCompat="@drawable/profile"
 
                 />
+
+
+            <Button
+                android:id="@+id/btnGaleria2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="1dp"
+                android:layout_marginStart="100dp"
+                android:background="@drawable/ic_plus"
+                android:clickable="true"
+                android:layout_gravity="center"
+
+
+                />
+
+            <Button
+                android:id="@+id/btnCamera2"
+                android:background="@drawable/ic_cameraa"
+                android:clickable="false"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                />
+
+
+
             <!--  <TextView
                   android:id="@+id/changename"
                   android:layout_width="match_parent"

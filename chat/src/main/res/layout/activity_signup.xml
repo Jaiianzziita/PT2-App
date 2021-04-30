@@ -65,7 +65,7 @@
                          />
                     <Button
                         android:id="@+id/btnCamera"
-                        android:background="@drawable/ic_camera"
+                        android:background="@drawable/ic_cameraa"
                         android:clickable="false"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
