@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.bridgefy.samples.chat.R
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
  * A placeholder fragment containing a simple view.
@@ -22,6 +24,7 @@ class PlaceholderFragment : Fragment() {
         pageViewModel = ViewModelProvider(this).get(PageViewModel::class.java).apply {
             setIndex(arguments?.getInt(ARG_SECTION_NUMBER) ?: 1)
         }
+
     }
 
     override fun onCreateView(
