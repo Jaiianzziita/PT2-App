@@ -1,14 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.bridgefy.sdk.samples.alerts.com.bridgefy.samples.alerts.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_broadcast"
-        android:title="@string/broadcast"
-        android:icon="@drawable/ic_broadcast"
-        app:showAsAction="always" />
-   <!-- <item
         android:id="@+id/buscar"
         android:icon="@drawable/ic_search"
         android:title="@string/buscar"
@@ -30,9 +24,9 @@
         android:title="@string/menu"
         android:contentDescription="@string/content_description_menu"
         app:showAsAction="ifRoom"
-       />-->
+        >
 
-      <!--  <menu>
+        <menu>
             <item
                 android:id="@+id/newGroup"
                 android:title="@string/crearGrupo"
@@ -57,7 +51,9 @@
         </menu>
 
     </item>
--->
+
+
+
 
 
 </menu>

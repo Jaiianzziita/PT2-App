@@ -15,4 +15,8 @@
     <string name="content_description_agregar">Agregar contacto</string>
     <string name="menu">Menu</string>
     <string name="content_description_menu">Menu</string>
+    <string name="crearGrupo">Nuevo grupo</string>
+    <string name="crearContactoEmergencia">Nuevo contacto de emergencia</string>
+    <string name="ajustesChats">Ajuste chats</string>
+    <string name="ajustesUbicacion">Ajuste ubicacion</string>
 </resources>

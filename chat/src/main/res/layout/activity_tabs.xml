@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#E91E63"
-            app:menu="@menu/menu_main"
+            app:menu="@menu/menu_item"
             app:navigationIcon="@drawable/ic_account" />
         <!--<TextView
             android:id="@+id/title"
