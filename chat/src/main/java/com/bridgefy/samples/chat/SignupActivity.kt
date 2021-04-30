@@ -47,7 +47,17 @@ class SignupActivity : AppCompatActivity() {
 
     //DETECTAMOS CUANDO SE PULSE EL BOTON PARA ABRIR LA CAMARA
     private fun abreCamara_Click(){
-        if ()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            if (checkSelfPermission(Manifest.permission.CAMERA)==PackageManager.PERMISSION_DENIED
+                    || checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_DENIED){
+                //PEDIRLE PERMISOS AL USUARIO CAMARA
+                val permisosCamara= arrayOf(Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                requestPermissions(permisosCamara, REQUEST_CAMERA)
+            } else{
+                abreCamara()}
+        }else{
+            abreCamara()
+        }
     }
 
 
@@ -83,6 +93,13 @@ class SignupActivity : AppCompatActivity() {
                 else
                     Toast.makeText(applicationContext, "No puedes acceder a tus imagenes", Toast.LENGTH_SHORT).show()
             }
+            REQUEST_CAMERA ->{
+                if (grantResults[0]==PackageManager.PERMISSION_GRANTED)
+                    abreCamara()
+                else
+                    Toast.makeText(applicationContext, "No puedes acceder a la camara", Toast.LENGTH_SHORT).show()
+
+            }
         }
     }
 
@@ -112,6 +129,9 @@ class SignupActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode==Activity.RESULT_OK  && requestCode==REQUEST_GALERY){
             imgFoto.setImageURI(data?.data)
+        }
+        if (resultCode == Activity.RESULT_OK && requestCode == REQUEST_CAMERA){
+            imgFoto.setImageURI(foto)
         }
     }
 
