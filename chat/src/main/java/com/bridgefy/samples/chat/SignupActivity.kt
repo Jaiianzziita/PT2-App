@@ -2,12 +2,15 @@ package com.bridgefy.samples.chat
 
 import android.Manifest
 import android.app.Activity
+import android.content.ContentValues
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -18,11 +21,14 @@ import kotlinx.android.synthetic.main.activity_signup.*
 class SignupActivity : AppCompatActivity() {
 
     private val REQUEST_GALERY=1001
+    private val REQUEST_CAMERA=1002
+    var foto: Uri?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
         abreGaleria_Click()
+        abreCamara_Click()
 
 
 
@@ -38,6 +44,12 @@ class SignupActivity : AppCompatActivity() {
             startActivity(intent)
         })
     }
+
+    //DETECTAMOS CUANDO SE PULSE EL BOTON PARA ABRIR LA CAMARA
+    private fun abreCamara_Click(){
+        if ()
+    }
+
 
     //DETECTAMOS CUANDO SE PULSE EL BOTON PARA ABRIR LA GALERIA
     private fun abreGaleria_Click(){
@@ -82,6 +94,19 @@ class SignupActivity : AppCompatActivity() {
         intentGaleria.type= "image/*"
         startActivityForResult(intentGaleria, REQUEST_GALERY)
     }
+
+    //ABRE LA CAMARA DEL TELEFONO Y PERMITE TOMAR LA FOTO
+    private fun abreCamara(){
+        val value=ContentValues()
+        value.put(MediaStore.Images.Media.TITLE, "Nueva imagen")
+        foto= contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, value)
+        val camaraIntent= Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        camaraIntent.putExtra(MediaStore.EXTRA_OUTPUT, foto)
+        startActivityForResult(camaraIntent,REQUEST_CAMERA)
+
+    }
+
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
