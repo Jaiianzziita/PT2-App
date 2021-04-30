@@ -23,7 +23,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/mobile"/>                /
+
+           <!-- <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
@@ -32,7 +37,7 @@
                 android:layout_marginBottom="32dp"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/mobile"
-                />
+                />-->
 
 
             <!--<pl.droidsonroids.gif.GifImageView
