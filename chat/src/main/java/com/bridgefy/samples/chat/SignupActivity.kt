@@ -1,6 +1,7 @@
 package com.bridgefy.samples.chat
 
 import android.Manifest
+import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
@@ -56,7 +57,7 @@ class SignupActivity : AppCompatActivity() {
             }
             }
         }
-
+        //CHECAMOS SI EL USUARIO DIO PERMISO A LA APLICACION
     override fun onRequestPermissionsResult(
             requestCode: Int,
             permissions: Array<out String>,
@@ -80,6 +81,13 @@ class SignupActivity : AppCompatActivity() {
         val intentGaleria= Intent(Intent.ACTION_PICK)
         intentGaleria.type= "image/*"
         startActivityForResult(intentGaleria, REQUEST_GALERY)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(resultCode==Activity.RESULT_OK  && requestCode==REQUEST_GALERY){
+            imgFoto.setImageURI(data?.data)
+        }
     }
 
 
