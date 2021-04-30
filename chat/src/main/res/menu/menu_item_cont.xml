@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/buscar2"
+        android:icon="@drawable/ic_search_dos"
+        android:title="@string/buscar2"
+        android:contentDescription="@string/content_description_buscar2"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/ic_menu_dos"
+        android:title="@string/menu2"
+        android:contentDescription="@string/content_description_menu2"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

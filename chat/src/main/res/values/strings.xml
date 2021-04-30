@@ -27,4 +27,9 @@
     <string name="hint_passwordProfile">Contraseña nueva</string>
     <string name="hint_passwordProfile2">Confirmar contraseña</string>
     <string name="button_sign_in">Iniciar sesion</string>
+    <string name="contacts">Contactos</string>
+    <string name="content_description_menu2">Menu</string>
+    <string name="menu2">Menu</string>
+    <string name="content_description_buscar2">Buscar</string>
+    <string name="buscar2">Buscar</string>
 </resources>
