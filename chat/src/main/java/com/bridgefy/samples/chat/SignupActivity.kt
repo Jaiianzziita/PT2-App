@@ -47,6 +47,7 @@ class SignupActivity : AppCompatActivity() {
 
     //DETECTAMOS CUANDO SE PULSE EL BOTON PARA ABRIR LA CAMARA
     private fun abreCamara_Click(){
+        imgFoto.setOnClickListener(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             if (checkSelfPermission(Manifest.permission.CAMERA)==PackageManager.PERMISSION_DENIED
                     || checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_DENIED){
@@ -58,6 +59,7 @@ class SignupActivity : AppCompatActivity() {
         }else{
             abreCamara()
         }
+    }
     }
 
 
