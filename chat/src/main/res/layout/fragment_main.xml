@@ -20,7 +20,7 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <Button
+  <!--  <Button
         android:id="@+id/u"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +28,6 @@
         android:textColor="@color/md_cyan_700"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="254dp" />
+        tools:layout_editor_absoluteY="254dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

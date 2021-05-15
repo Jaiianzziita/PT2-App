@@ -28,7 +28,7 @@
             style="@style/Widget.MaterialComponents.Toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#26C6DA"
+            android:background="#3F51B5"
             app:navigationIcon="@drawable/ic_return2"
             app:title="@string/profile"
             app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
