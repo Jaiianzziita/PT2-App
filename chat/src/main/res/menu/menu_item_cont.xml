@@ -9,14 +9,22 @@
         android:contentDescription="@string/content_description_buscar2"
         app:showAsAction="ifRoom"
         />
-
     <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add2"
+        android:title="Agregar"
+
+        app:showAsAction="ifRoom"
+        />
+
+
+   <!-- <item
         android:id="@+id/menu2"
         android:icon="@drawable/ic_menu_dos"
         android:title="@string/menu2"
         android:contentDescription="@string/content_description_menu2"
         app:showAsAction="ifRoom"
-        />
+        />-->
 
 
 </menu>

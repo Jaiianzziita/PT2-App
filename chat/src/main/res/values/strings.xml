@@ -46,4 +46,5 @@
     <string name="text_forgot_password_title">¿Olvidaste tu contraseña? No te preocupes</string>
     <string name="text_forgot_password_message">Te enviaremos un link para reestablecer tu contraseña</string>
     <string name="button_send">Enviar</string>
+
 </resources>

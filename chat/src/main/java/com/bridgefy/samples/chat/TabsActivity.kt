@@ -2,15 +2,13 @@ package com.bridgefy.samples.chat
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
+import com.bridgefy.samples.chat.Contacts.Contacts
+import com.bridgefy.samples.chat.ui.main.SectionsPagerAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
-import androidx.viewpager.widget.ViewPager
-import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import com.bridgefy.samples.chat.Profile.Profile
-import com.bridgefy.samples.chat.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_tabs.*
 
 class TabsActivity : AppCompatActivity() {
@@ -35,7 +33,7 @@ class TabsActivity : AppCompatActivity() {
 
         topAppBar.setNavigationOnClickListener({view ->
 
-            val intent: Intent = Intent (this, Profile::class.java)
+            val intent: Intent = Intent (this, Contacts::class.java)
             startActivity(intent)
 
             Snackbar.make(view, "mandar a perfil", Snackbar.LENGTH_SHORT )
