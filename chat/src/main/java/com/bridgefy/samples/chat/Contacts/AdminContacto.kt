@@ -47,7 +47,7 @@ class AdminContacto {
         try{
             val db = AppContactos.DB.writableDatabase  //para escribir en la base de datos
             var qry ="INSERT INTO ${AppContactos.TB_CONTACTOS} (" +
-                    "${Contract.Contacto.NOMBRE}, ${Contract.Contacto.NUMERO}" +  //el id no se coloca ya que de todos modos incrementara automaticamente
+                    "${Contract.Contacto.NOMBRE}, ${Contract.Contacto.NUMERO})" +  //el id no se coloca ya que de todos modos incrementara automaticamente
                     "VALUES('${contacto.nombre}', '${contacto.numero}');"  //toma el valor de Contacto y va al objeto nombre y numero
             db.execSQL(qry)
             db.close()  //siempre debe cerrarse

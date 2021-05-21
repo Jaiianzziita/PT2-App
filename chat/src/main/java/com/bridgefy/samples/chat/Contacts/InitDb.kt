@@ -15,7 +15,7 @@ class InitDb: SQLiteOpenHelper(AppContactos.CONTEXT,AppContactos.DB_NAME,null, A
 
     }
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {  /*se ejecuta cuando se hace alguna
+    override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {  /*se ejecuta cuando se hace alguna
                                                                                  actualizacion en la base de datos*/
 
     }

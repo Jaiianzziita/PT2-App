@@ -11,7 +11,7 @@ class AppContactos: Application (){
 
     companion object    {    //para variables estaticas
         lateinit var CONTEXT: Context
-        var DB= InitDb()
+        lateinit var DB: InitDb
         val DB_NAME= "ContactosDB.db"  //es un archivo de BD tipo sqlite que se guardara en el telefono
         val VERSION= 1  //mientras no se hagan modificaciones a la base de datos seguira siendo 1
         val TB_CONTACTOS="tbContactos"  //nombre de la tavla
@@ -20,5 +20,6 @@ class AppContactos: Application (){
         super.onCreate()
 
         CONTEXT=applicationContext
+        DB=InitDb()
     }
 }
