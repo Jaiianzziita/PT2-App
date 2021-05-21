@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.bridgefy.samples.chat.R
 import kotlinx.android.synthetic.main.activity_contacts.*
@@ -12,10 +13,12 @@ import kotlinx.android.synthetic.main.activity_contacts.*
 class Contacts : AppCompatActivity() {
 
     val contactoAdmin = AdminContacto()
+    lateinit var nombres: ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contacts)
+        eliminar()
 
 
 
@@ -37,7 +40,7 @@ class Contacts : AppCompatActivity() {
 
 
     fun crearLista(){ //cuando la aplicacion empiece se cree la lista y obrenga los datos de la base de datos
-        val nombres= contactoAdmin.getAllNames()
+        nombres= contactoAdmin.getAllNames()!!
         val adaptador = ArrayAdapter(applicationContext, android.R.layout.simple_list_item_1, nombres!!)
         listContactos.adapter= adaptador
 
@@ -47,6 +50,26 @@ class Contacts : AppCompatActivity() {
             Toast.makeText(AppContactos.CONTEXT, item, Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    fun eliminar (){
+        listContactos.onItemLongClickListener =AdapterView.OnItemLongClickListener{adapterView , view, i , l ->
+            //Toast.makeText(AppContactos.CONTEXT, "Diste un click prolongado", Toast.LENGTH_SHORT).show()
+            val nombre =nombres.get(i)
+            val dialog = AlertDialog.Builder(this)
+            dialog.setTitle("Confirmacion")
+            dialog.setMessage("Confirme que desea eliminar este contacto")
+            dialog.setPositiveButton("Si") {dialogInterface, i ->
+                // TODO - Aqui programamos lo que queremos que pase cuando oprimimos "Si"
+                contactoAdmin.deleteContacto(nombre)
+                crearLista()
+            }
+            dialog.setNegativeButton("No"){dialogInterface, i ->
+                dialogInterface.dismiss()
+            }
+            dialog.show()
+            true
+        }
     }
 
 

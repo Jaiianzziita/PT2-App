@@ -55,4 +55,17 @@ class AdminContacto {
             Toast.makeText(AppContactos.CONTEXT, "No se pudo guardar el contacto", Toast.LENGTH_SHORT).show()
         }
     }
+    fun deleteContacto(nombre: String){
+        try{
+            val db= AppContactos.DB.writableDatabase
+            var qry= "DELETE FROM ${AppContactos.TB_CONTACTOS} WHERE ${Contract.Contacto.NOMBRE}= '$nombre';"
+            db.execSQL(qry)
+            db.close()
+        }catch (ex:Exception){
+            Toast.makeText(AppContactos.CONTEXT, "No se pudo eliminar el contacto", Toast.LENGTH_SHORT).show()
+
+        }
+
+    }
+
 }
