@@ -3,11 +3,12 @@ package com.bridgefy.samples.chat
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.bridgefy.samples.chat.Tabs.Tab
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         findViewById<Button>(R.id.button_signin).setOnClickListener({
-            val intent: Intent = Intent (this,  TabsActivity::class.java)
+            val intent: Intent = Intent (this,  Tab::class.java)
             startActivity(intent)
         })
     }
