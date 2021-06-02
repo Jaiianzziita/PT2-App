@@ -3,20 +3,35 @@ package com.bridgefy.samples.chat.Tabs
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.bridgefy.samples.chat.Contacts.Contacts
 import com.bridgefy.samples.chat.MainActivity
+import com.bridgefy.samples.chat.Profile.Profile
 import com.bridgefy.samples.chat.R
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.getbase.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_tab.*
 
 class Tab : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tab)
-        val fabb: FloatingActionButton =findViewById(R.id.fabb)
-        fabb.setOnClickListener{view ->
-            val intent: Intent= Intent(this, MainActivity::class.java)
+
+
+        val fab1: FloatingActionButton =findViewById(R.id.fab1)
+        fab1.setOnClickListener{view ->
+            val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        val fab2: FloatingActionButton =findViewById(R.id.fab2)
+        fab2.setOnClickListener{view ->
+            val intent: Intent = Intent(this, Contacts::class.java)
+            startActivity(intent)
+        }
+        val fab3: FloatingActionButton =findViewById(R.id.fab3)
+        fab3.setOnClickListener{view ->
+            val intent: Intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+        }
+
 
 
         setUpTabs()

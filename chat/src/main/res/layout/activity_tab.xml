@@ -32,13 +32,55 @@
           android:id="@+id/viewPager"
           android:layout_below="@+id/appBarLayout"/>
 
-     <com.google.android.material.floatingactionbutton.FloatingActionButton
+     <com.getbase.floatingactionbutton.FloatingActionsMenu
+         android:id="@+id/grupoFab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         app:fab_labelStyle="@style/etiqueta"
+         app:fab_addButtonColorNormal="@color/colorPrimary"
+         app:fab_addButtonColorPressed="@color/colorPrimaryDark">
+
+          <com.getbase.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fab1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:fab_icon="@android:drawable/ic_dialog_email"
+              app:fab_size="mini"
+              app:fab_colorNormal="?attr/colorAccent"
+              app:fab_title="Mensajes"
+              />
+
+          <com.getbase.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fab2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:fab_icon="@drawable/ic_dialog_addperson"
+              app:fab_size="mini"
+              app:fab_colorNormal="?attr/colorAccent"
+              app:fab_title="Contactos"
+              />
+
+          <com.getbase.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fab3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:fab_icon="@drawable/ic_person"
+              app:fab_size="mini"
+              app:fab_colorNormal="?attr/colorAccent"
+              app:fab_title="Perfil"
+              />
+
+     </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
          android:id="@+id/fabb"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="bottom|end"
          android:layout_margin="@dimen/fab_margin"
-         app:srcCompat="@android:drawable/ic_dialog_email" />
+         app:srcCompat="@android:drawable/ic_dialog_email" />-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

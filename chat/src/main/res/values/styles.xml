@@ -36,4 +36,9 @@
         <item name="android:textSize">10sp</item>
     </style>
 
+    <style name="etiqueta">
+        <item name="android:background">@drawable/fondo_eti_fab</item>
+        <item name="android:textColor">#ffff</item>
+    </style>
+
 </resources>
