@@ -1,0 +1,7 @@
+query LaunchList {
+    login(user: "feli98", password: "qwerty"){
+        ok,
+        message,
+        token
+    }
+}
