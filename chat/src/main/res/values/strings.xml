@@ -49,5 +49,10 @@
     <string name="title_activity_maps">Map</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_login">main_login</string>
+    <string name="main_type_login" />
+    <string name="main_type_register" />
+    <string name="hint_name">Nombre</string>
+    <string name="hint_numero">Numero</string>
 
 </resources>

@@ -4,10 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.bridgefy.samples.chat.LoginActivity
-import com.bridgefy.samples.chat.MainActivity
-import com.bridgefy.samples.chat.R
-import com.bridgefy.samples.chat.TabsActivity
+import com.bridgefy.samples.chat.*
 
 class EntFour : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
