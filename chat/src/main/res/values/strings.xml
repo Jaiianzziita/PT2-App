@@ -38,7 +38,7 @@
     <string name="text_forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="text_signin_signup">¿No tienes cuenta? <b>Registrate</b></string>
     <string name="text_signup_message">Hola, vamos a configurar tu cuenta</string>
-    <string name="hint_email">Correo</string>
+    <string name="hint_email">Número telefónico</string>
     <string name="hint_phone">Numero telefonico</string>
     <string name="hint_confirm_password">Confirmar contraseña</string>
     <string name="button_sign_up">Registrar</string>
